@@ -75,8 +75,8 @@ export function loadComment(id) {
     fetch(`/comments/${id}`)
     .then( (res) => {
       return res.json();
-    }).then( (comment) => {
-      dispatch(commentLoaded(comment));
+    }).then( (comments) => {
+      dispatch(commentLoaded(comments));
     });
   };
 }
