@@ -12,7 +12,10 @@ app.use(express.static('public'));
 app.use(ContactRoutes);
 app.use(CommentRoutes);
 app.use(VehicleRoutes);
-app.use(ProductRoutes);
+app.use(ProductRoutes);let mongoose = require("mongoose");
+mongoose.Promise = global.Promise;
+mongoose.connect("mongodb://cynthiawilliamsa:w010149c@ds139705.mlab.com:39705/express-practice");
+
 
 //* Make your app listen to port 3001
 app.listen(3001, (err) => {
