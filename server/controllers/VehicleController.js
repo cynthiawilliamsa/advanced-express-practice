@@ -14,8 +14,7 @@ module.exports.list =  function list(request, response) {
     vehicleModel.findById(request.params.id).exec()
     .then(vehicle => {
         response.json(vehicle);
-    });
-   
+    });   
    }
 
    module.exports.create =  function create(request, response) {
