@@ -1,5 +1,5 @@
-let comments = require("../comments");
-let commentCount = comments.length;
+// let comments = require("../comments");
+// let commentCount = comments.length;
 const commentModel = require("../models/commentModel");
 
 
